@@ -14,7 +14,7 @@
             <div id="coins"><img src="img/coins.png" /> <span id="coins-count">0</span></div>
             <div id="player">
                 <img src="img/person.png" />
-                <span id="playername">Marius</span>
+                <span id="playername">Diogo</span>
             </div>
             <div id="points"><img src="img/points.png" /> <span id="points-count">0</span></div>
         </section>
@@ -40,5 +40,33 @@
             </table>
         </aside>
     </div>
+
+    <script>
+        //oppg 1: Spillernavn
+        const playerName = "Hiof"
+        document.getElementById("playername").innerHTML = playerName
+        
+        //oppg 2: Penger
+        let coins = 15
+        document.getElementById("coins-count").innerHTML =  coins 
+
+        //oppg 3: Liv
+        let lives = 5
+        document.getElementById("lives-count").innerHTML = lives
+
+        //oppg 4: Våpen-nivåer
+        let longsword = 1
+        let warhammer = 4
+        let battleaxe = 2
+        let armour = 3
+        document.getElementById("weapon-longsword").innerHTML = longsword
+        document.getElementById("weapon-warhammer").innerHTML = warhammer
+        document.getElementById("weapon-battleaxe").innerHTML = battleaxe
+        document.getElementById("weapon-armour").innerHTML = armour
+
+        //oppg 5:
+        let points = (coins*5) + (longsword * 5) + (warhammer * 15) + (battleaxe * 20) + (armour * 25)
+        document.getElementById("points-count").innerHTML = points
+    </script>    
 </body>
 </html>
